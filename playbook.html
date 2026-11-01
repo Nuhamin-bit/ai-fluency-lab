@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI Readiness Toolkit | AI Fluency Lab</title>
+<meta name="description" content="A free 4-week program to help small teams use AI safely, confidently and well.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+.hero{padding-block:40px 24px;display:grid;gap:16px}
+.weeks{display:grid;gap:0;border:1px solid var(--line);border-radius:10px;background:var(--surface);overflow:hidden}
+.week{display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;padding:16px 20px;border-top:1px solid var(--line)}
+.week:first-child{border-top:0}
+.week .when{font-family:var(--mono);font-size:.85rem;color:var(--accent);padding-top:2px}
+.week .tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--c)}
+@media (max-width:520px){.week{grid-template-columns:1fr;gap:4px}}
+.inside{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width:760px){.inside{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.inside{grid-template-columns:1fr}}
+.inside .card{padding:18px}
+.callout{background:var(--soft);border-radius:10px;padding:18px 20px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="top" aria-label="Main">
+    <a class="brand" href="index.html">AI Fluency Lab</a>
+    <div class="links"><a href="check.html">Fluency Check</a><a href="playbook.html" aria-current="page">Readiness Toolkit</a><a href="index.html#about">About</a></div>
+  </nav>
+
+  <header class="hero">
+    <p class="eyebrow">Free · 4 weeks · For teams of 5–50</p>
+    <h1>AI Readiness Toolkit</h1>
+    <p class="lead">Take a small business or nonprofit from “we have AI tools” to “our team uses them safely and well” in four weeks. No AI or IT specialist needed: one facilitator runs it.</p>
+    <div class="row"><a class="btn primary" href="toolkit/AI_Readiness_Toolkit.pdf" download>Download the toolkit (PDF, 9 pages)</a><a class="btn ghost" href="check.html">Try the online skills check</a></div>
+  </header>
+
+  <section aria-labelledby="plan-h">
+    <div style="display:grid;gap:16px">
+      <h2 id="plan-h">The 4-week plan</h2>
+      <div class="weeks">
+        <div class="week"><span class="when">Week 0</span><div><b>Check and choose.</b> Everyone takes the 15-minute readiness check. Pick 2–3 frequent, low-risk tasks where AI can help most.</div></div>
+        <div class="week" style="--c:var(--d4)"><span class="when">Week 1</span><div><span class="tag">Diligence</span><br><b>Safe use first.</b> Share the safe-use rules before anyone uses AI for work. Practice sorting requests into “OK for AI” and “not OK.”</div></div>
+        <div class="week" style="--c:var(--d1)"><span class="when">Week 2</span><div><span class="tag">Description</span><br><b>Clear requests.</b> Task, context, audience, format. Rewrite real tasks as strong requests.</div></div>
+        <div class="week" style="--c:var(--d2)"><span class="when">Week 3</span><div><span class="tag">Delegation</span><br><b>What to hand off.</b> Break real work into steps and decide what AI drafts, what a person does and what a person checks.</div></div>
+        <div class="week" style="--c:var(--d3)"><span class="when">Week 4</span><div><span class="tag">Discernment</span><br><b>Catch the mistakes.</b> Find the errors in planted AI answers, then retake the readiness check and compare.</div></div>
+      </div>
+      <div class="callout"><b>Why safe use comes first:</b> people start using AI on day one, so the rules have to come before the skills.</div>
+    </div>
+  </section>
+
+  <section aria-labelledby="inside-h">
+    <div style="display:grid;gap:16px">
+      <h2 id="inside-h">What’s inside</h2>
+      <div class="inside">
+        <div class="card"><h3>Readiness check</h3><p class="muted">12 statements, scored by ability, repeated in Week 4 to show progress.</p></div>
+        <div class="card"><h3>Use-case picker</h3><p class="muted">Four simple tests and ideas by role to choose your first tasks.</p></div>
+        <div class="card"><h3>Four session guides</h3><p class="muted">60-minute agendas with practice tasks and facilitator tips.</p></div>
+        <div class="card"><h3>Safe-use policy</h3><p class="muted">A one-page template: approved tools, what never goes into AI, who to ask.</p></div>
+        <div class="card"><h3>Results tracker</h3><p class="muted">Before-and-after scores, time saved and adoption, for a leadership summary.</p></div>
+        <div class="card"><h3>Free resources</h3><p class="muted">Hand-picked free courses to keep building skills after the program.</p></div>
+      </div>
+      <div class="row"><a class="btn primary" href="toolkit/AI_Readiness_Toolkit.pdf" download>Download the toolkit</a></div>
+      <p class="note">Running a pilot with your team? I’d love to hear how it goes: nuhamintesfay16@gmail.com</p>
+    </div>
+  </section>
+
+  <footer class="site">
+    <p>Created by Nuhamin H. Tesfay, based on the Cybersecurity &amp; AI Capital Model (CCM), published in the Proceedings of the Southeastern INFORMS Conference 2026. The four abilities follow the AI Fluency framework by Rick Dakan and Joseph Feller.</p>
+    <p>Free to use and share with credit. Not legal or compliance advice.</p>
+  </footer>
+</div>
+</body>
+</html>

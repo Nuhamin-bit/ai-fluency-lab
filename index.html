@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI Fluency Lab | Nuhamin H. Tesfay</title>
+<meta name="description" content="Free tools to help people and teams use AI safely and well: the AI Fluency Check and the AI Readiness Toolkit, by Nuhamin H. Tesfay.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+.hero{padding-block:48px 32px;display:grid;gap:18px}
+.quote{font-family:var(--display);font-size:clamp(1.3rem,3.2vw,1.7rem);color:var(--gold);font-weight:500}
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:28px;align-items:start}
+@media (max-width:700px){.about{grid-template-columns:1fr}}
+.facts{display:grid;gap:8px;padding:0;margin:0;list-style:none}
+.facts li{border-left:3px solid var(--accent);padding-left:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="top" aria-label="Main">
+    <a class="brand" href="index.html">AI Fluency Lab</a>
+    <div class="links"><a href="check.html">Fluency Check</a><a href="playbook.html">Readiness Toolkit</a><a href="#about">About</a></div>
+  </nav>
+
+  <header class="hero">
+    <p class="eyebrow">Free tools for people and teams</p>
+    <h1>Use AI with confidence, judgment and care.</h1>
+    <p class="lead">Most organizations have AI tools. Few have people who use them well, or the guardrails to use them safely. These free tools help close that gap.</p>
+    <p class="quote">AI is only as safe as the people who build it and use it.</p>
+    <div class="row"><a class="btn primary" href="check.html">Take the AI Fluency Check</a><a class="btn ghost" href="playbook.html">Get the Readiness Toolkit</a></div>
+  </header>
+
+  <section aria-labelledby="abilities">
+    <div style="display:grid;gap:18px">
+      <h2 id="abilities">Four abilities make someone fluent with AI</h2>
+      <div class="dims">
+        <div class="dim" style="--c:var(--d1)"><b>Description</b><span>Explaining a task clearly to AI</span></div>
+        <div class="dim" style="--c:var(--d2)"><b>Delegation</b><span>Deciding what AI should and shouldn’t do</span></div>
+        <div class="dim" style="--c:var(--d3)"><b>Discernment</b><span>Judging whether AI output is right</span></div>
+        <div class="dim" style="--c:var(--d4)"><b>Diligence</b><span>Using AI safely and responsibly</span></div>
+      </div>
+      <p class="note">These four abilities follow the AI Fluency framework by Rick Dakan and Joseph Feller, applied in the Cybersecurity &amp; AI Capital Model (CCM).</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="tools">
+    <div style="display:grid;gap:18px">
+      <h2 id="tools">The tools</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="eyebrow">For individuals · 10 minutes</p>
+          <h3>AI Fluency Check</h3>
+          <p class="muted">Answer 12 questions and get a score on each of the four abilities, plus a short learning plan with free courses for the area that needs the most practice. Your answers never leave your browser.</p>
+          <a class="btn primary" href="check.html">Start the check</a>
+        </article>
+        <article class="card">
+          <p class="eyebrow">For teams · 4 weeks</p>
+          <h3>AI Readiness Toolkit</h3>
+          <p class="muted">A free program for small businesses and nonprofits: a skills check, a use-case picker, four session guides, a safe-use policy template and a results tracker.</p>
+          <a class="btn primary" href="playbook.html">See the toolkit</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="about-h">
+    <div class="about">
+      <div style="display:grid;gap:10px">
+        <p class="eyebrow">About</p>
+        <h2 id="about-h">Nuhamin H. Tesfay</h2>
+        <p class="muted">AI governance, risk and enablement</p>
+      </div>
+      <div style="display:grid;gap:14px">
+        <p>I help organizations adopt AI safely and get real value from it, combining governance, cybersecurity and people development. These tools turn my research on AI fluency into something people can use.</p>
+        <ul class="facts">
+          <li>Published AI fluency research, Southeastern INFORMS Conference 2026</li>
+          <li>Speaker, Cyber Saints WiCyS Conference 2026</li>
+          <li>6 years in risk and program management</li>
+          <li>M.S. Cybersecurity · MBA</li>
+        </ul>
+        <div class="row"><a class="btn ghost" href="https://www.linkedin.com/in/nuhamintesfay" target="_blank" rel="noopener">Connect on LinkedIn</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site">
+    <p>© 2026 Nuhamin H. Tesfay. Free to use and share with credit. These are learning tools, not legal or compliance advice.</p>
+  </footer>
+</div>
+</body>
+</html>

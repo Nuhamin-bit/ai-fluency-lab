@@ -1,0 +1,51 @@
+/* Shared styles: a calm teal palette with four ability colors (Description, Delegation, Discernment, Diligence). */
+:root{
+  --bg:#f3f6f5; --surface:#ffffff; --ink:#15201e; --muted:#566663; --line:#d5dfdc;
+  --accent:#0b6b62; --accent-ink:#ffffff; --soft:#e3efec; --gold:#9a6b12;
+  --d1:#2f5bd3; --d2:#b5531d; --d3:#7a3fb8; --d4:#0b7a55; --warn:#9a6400;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Public Sans","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#0f1716; --surface:#16211f; --ink:#e6eeec; --muted:#9db0ac; --line:#2b3a37;
+  --accent:#4cc2b4; --accent-ink:#06211e; --soft:#1c2d2a; --gold:#e3b964;
+  --d1:#7d9cff; --d2:#f0935a; --d3:#bf8cf2; --d4:#4fd19c; --warn:#f2c15c; color-scheme:dark}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:960px;margin:0 auto}
+.narrow{max-width:760px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.1rem,6vw,3.4rem);font-weight:700;letter-spacing:-.01em}
+h2{font-size:clamp(1.4rem,3.5vw,1.9rem);font-weight:700}
+h3{font-size:1.15rem;font-weight:600}
+p{margin:0}
+a{color:var(--accent)}
+.eyebrow{font-family:var(--mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.lead{font-size:1.15rem;color:var(--muted);max-width:62ch}
+.muted{color:var(--muted)}
+.note{font-size:.88rem;color:var(--muted)}
+nav.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:18px;flex-wrap:wrap}
+nav.top .brand{font-family:var(--display);font-weight:700;text-decoration:none;color:var(--ink)}
+nav.top .links{display:flex;gap:18px;flex-wrap:wrap}
+nav.top .links a{text-decoration:none;color:var(--muted);font-weight:500}
+nav.top .links a:hover,nav.top .links a[aria-current]{color:var(--accent)}
+section{padding-block:40px}
+.btn{display:inline-block;font:inherit;font-weight:600;border:0;border-radius:6px;padding:12px 18px;cursor:pointer;text-decoration:none}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--line)}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+.dims{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media (max-width:640px){.dims{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.dim{border-top:3px solid var(--c);padding-top:8px;display:grid;gap:2px;min-width:0}
+.dim b{font-family:var(--display);font-weight:700}
+.dim span{font-size:.88rem;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+@media (max-width:700px){.cards{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px;display:grid;gap:12px;align-content:start;min-width:0}
+.card .btn{justify-self:start}
+footer.site{border-top:1px solid var(--line);padding-block:28px 40px;font-size:.88rem;color:var(--muted);display:grid;gap:6px}
